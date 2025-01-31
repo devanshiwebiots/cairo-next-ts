@@ -1,25 +1,16 @@
 import { UploadProjectFiles } from "@/Constant";
-import { Dropzone, ExtFile, FileMosaic } from "@dropzone-ui/react";
+// import { Dropzone, ExtFile, FileMosaic } from "@dropzone-ui/react";
 import { useState } from "react";
 import { Col, FormGroup, Label, Row } from "reactstrap";
 
 const UploadProjectFile = () => {
-  const [files, setFiles] = useState<ExtFile[]>([]);
-
-  const updateFiles = (incomingFiles: ExtFile[]) => {
-    setFiles(incomingFiles);
-  };
-
-  const removeFile = (id: string | number | undefined) => {
-    setFiles(files.filter((x: ExtFile) => x.id !== id));
-  };
 
   return (
     <Row>
       <Col>
         <FormGroup>
           <Label check>{UploadProjectFiles}</Label>
-          <Dropzone onChange={updateFiles} value={files} maxFiles={1} header={false} footer={false} minHeight="80px" label="Drag'n drop files here or click to Browse">
+          {/* <Dropzone onChange={updateFiles} value={files} maxFiles={1} header={false} footer={false} minHeight="80px" label="Drag'n drop files here or click to Browse">
             {files.map((file: ExtFile) => (
               <FileMosaic key={file.id} {...file} onDelete={removeFile} info={true} />
             ))}
@@ -32,7 +23,7 @@ const UploadProjectFile = () => {
                 </h6>
               </div>
             )}
-          </Dropzone>
+          </Dropzone> */}
         </FormGroup>
       </Col>
     </Row>

@@ -2,7 +2,7 @@ import ConfigDB from "@/Config/ThemeConfig";
 import { Cancel, Configuration, CopyText } from "@/Constant";
 import { PropsTypeProp } from "@/Types/ThemeCustomizerTypes";
 import React, { Fragment } from "react";
-import CopyToClipboard from "react-copy-to-clipboard";
+// import CopyToClipboard from "react-copy-to-clipboard";
 import { toast } from "react-toastify";
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 import ConfigDBCode from "./ConfigDBCode";
@@ -20,9 +20,9 @@ const ConfigurationClass: React.FC<PropsTypeProp> = ({ modal, toggle }) => {
           <ConfigDBCode />
         </ModalBody>
         <ModalFooter>
-            <CopyToClipboard text={JSON.stringify(configDB)}>
+            {/* <CopyToClipboard text={JSON.stringify(configDB)}>
                 <Button color="primary" className="notification" onClick={handleThemeCopy}>{CopyText}</Button>
-            </CopyToClipboard>
+            </CopyToClipboard> */}
             <Button color="secondary" onClick={toggle}>{Cancel}</Button>
         </ModalFooter>
       </Modal>

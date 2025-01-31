@@ -1,19 +1,11 @@
-import { Dropzone, ExtFile, FileMosaic } from "@dropzone-ui/react";
+// import { Dropzone, ExtFile, FileMosaic } from "@dropzone-ui/react";
 import { useState } from "react";
 import { Form } from "reactstrap";
 
 const DropzoneClass = () => {
-  const [files, setFiles] = useState<ExtFile[]>([]);
-  const updateFiles = (incomingFiles: ExtFile[]) => {
-    setFiles(incomingFiles);
-  };
-  const removeFile = (id: string | number | undefined) => {
-    setFiles(files.filter((x: ExtFile) => x.id !== id));
-  };
-
-  return (
+   return (
     <Form className="m-b-20">
-      <Dropzone onChange={updateFiles} value={files} maxFiles={1} header={false} footer={false} label="Drag'n drop files here or click to Browse">
+      {/* <Dropzone onChange={updateFiles} value={files} maxFiles={1} header={false} footer={false} label="Drag'n drop files here or click to Browse">
         {files.map((file: ExtFile) => (
           <FileMosaic key={file.id} {...file} onDelete={removeFile} info={true} />
         ))}
@@ -23,7 +15,7 @@ const DropzoneClass = () => {
             <h6 className="f-w-700 mb-1">Drop files here or click to upload.</h6>
           </div>
         )}
-      </Dropzone>
+      </Dropzone> */}
     </Form>
   );
 };

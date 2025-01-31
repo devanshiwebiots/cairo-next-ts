@@ -1,7 +1,7 @@
 import CommonCardHeader from '@/CommonComponent/CommonCardHeader';
 import { ClipBoardCopy, CopyHighLightedText, CopyPortionFromParagraphs, HighlightText } from '@/Constant';
 import React, { useState } from 'react'
-import CopyToClipboard from 'react-copy-to-clipboard';
+// import CopyToClipboard from 'react-copy-to-clipboard';
 import { Button, Card, CardBody, Col } from 'reactstrap';
 
 const CopyPortionFromParagraph = () => {
@@ -18,11 +18,11 @@ const CopyPortionFromParagraph = () => {
                 that are visible online. Take a website design course to learn how to create an appealing and responsive website. In the discipline of web design, there are degree, diploma, postgraduate degree, and certificate programmes. A web designer is responsible for a website's look, feel, and occasionally even content.
                 </h6>
                 <div className='mt-3 text-end'>
-                    <CopyToClipboard text={highlightTextValue.value} onCopy={(value) => setHighlightTextValue({ value, copied:true})}>
+                    {/* <CopyToClipboard text={highlightTextValue.value} onCopy={(value) => setHighlightTextValue({ value, copied:true})}>
                         <Button color='secondary' className='btn-clipboard'>
                         <i className="fa fa-copy"/> {CopyHighLightedText}
                         </Button>
-                    </CopyToClipboard>
+                    </CopyToClipboard> */}
                 </div>
             </div>
         </CardBody>

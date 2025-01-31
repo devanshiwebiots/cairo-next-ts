@@ -1,5 +1,5 @@
 import { Class, CopyText, Markup } from "@/Constant";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+// import { CopyToClipboard } from "react-copy-to-clipboard";
 import { toast } from "react-toastify";
 import { Button, Container, Input, Row } from "reactstrap";
 import React, { useEffect, useState } from "react";
@@ -43,7 +43,7 @@ const IconMarkUp: React.FC<IconMarkUpProps> = ({ icons, itag }) => {
               <div className="form-inline">
                 <div className="form-group m-0">
                   <Input className="inp-val m-r-10" id="input_copy" type="text" defaultValue={itag.iTag} />
-                  <CopyToClipboard text={itag.iTag}>
+                  {/* <CopyToClipboard text={itag.iTag}>
                     <Button
                       color="primary"
                       className="notification"
@@ -56,7 +56,7 @@ const IconMarkUp: React.FC<IconMarkUpProps> = ({ icons, itag }) => {
                     >
                       {CopyText}
                     </Button>
-                  </CopyToClipboard>
+                  </CopyToClipboard> */}
                 </div>
               </div>
             </div>
