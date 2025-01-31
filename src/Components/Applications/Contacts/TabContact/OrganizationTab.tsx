@@ -1,0 +1,30 @@
+import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
+import { Organization } from "@/Constant";
+import React, { useCallback, useState } from "react";
+import { Card, CardBody, Col, Row, TabContent } from "reactstrap";
+import NavOrg from "./OrganicTab/NavOrg";
+import TabOrg from "./OrganicTab/TabOrg";
+
+const OrganizationTab = () => {
+  const [orgActiveTab, setOrgActiveTab] = useState("1");
+  const callback = useCallback((tab: string) => {
+    setOrgActiveTab(tab);
+  }, []);
+  return (
+    <Card className="mb-0">
+        <CommonCardHeader title={Organization} headClass=' d-flex'/>
+        <CardBody className="p-0">
+            <Row className="list-persons">
+                <NavOrg callback={callback}/>
+                <Col xl="8" md="7" className='xl-50'>
+              <TabContent activeTab={orgActiveTab}>
+                <TabOrg />
+              </TabContent>
+            </Col>
+            </Row>
+        </CardBody>
+    </Card> 
+  )
+};
+
+export default OrganizationTab;
