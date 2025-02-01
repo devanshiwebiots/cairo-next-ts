@@ -1,22 +1,22 @@
 export const TourSteps = [
   {
-    selector: ".step1",
+    target: ".step1",
     content: "This is Cairo profile",
   },
   {
-    selector: ".step2",
+    target: ".step2",
     content: "Change Cairo profile image here",
   },
   {
-    selector: ".step3",
+    target: ".step3",
     content: "This is your profile details",
   },
   {
-    selector: ".step4",
+    target: ".step4",
     content: "This is your social details",
   },
   {
-    selector: ".step5",
+    target: ".step5",
     content: "This is your first Post",
   }
   ];

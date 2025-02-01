@@ -11,7 +11,7 @@ export const MyGallery = () => {
           <Item original={`${ImagePath}/${item}`} width="1500" height="850">
             {({ ref, open }) => (
               <Link href={Href} onClick={open}>
-                <img className="img-thumbnail mb-4 p-2" ref={ref as unknown as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="image" />
+                <img className="img-thumbnail mb-4 p-2" ref={ref} src={`${ImagePath}/${item}`} alt="image" />
               </Link>
             )}
           </Item>

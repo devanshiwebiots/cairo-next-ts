@@ -7,38 +7,36 @@ import InvoiceFooterButton from './InvoiceFooterButton'
 import { useReactToPrint } from 'react-to-print'
 
 const Invoice6Container = () => {
-    const componentRef = useRef<HTMLDivElement | null>(null);
+const contentRef = useRef<HTMLDivElement | null>(null);
 
-    const handlePrint = useReactToPrint({
-      content: () => componentRef.current,
-    });
+const handlePrint = useReactToPrint({
+  contentRef,
+});
   return (
     <Fragment>
-     <Container>
+      <Container>
         <Row>
-            <Col sm='12'>
-            <div ref={componentRef}>
-
-                <Card>
-                    <CardBody>
-                        <div className='invoice'>
-                            <div>
-                                <InvoiceSixHeader />
-                                <hr />
-                                <UserDetails />
-                                <InvoiceSixTable />
-                            </div>
-                        </div>
-                    </CardBody>
-                </Card>
+          <Col sm="12">
+            <div ref={contentRef}>
+              <Card>
+                <CardBody>
+                  <div className="invoice">
+                    <div>
+                      <InvoiceSixHeader />
+                      <hr />
+                      <UserDetails />
+                      <InvoiceSixTable />
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
             </div>
-            </Col>
+          </Col>
         </Row>
-     </Container>
-     <InvoiceFooterButton handlePrint={handlePrint} />
-
+      </Container>
+      <InvoiceFooterButton handlePrint={handlePrint} />
     </Fragment>
-  )
+  );
 }
 
 export default Invoice6Container

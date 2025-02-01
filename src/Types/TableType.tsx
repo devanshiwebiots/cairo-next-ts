@@ -1,4 +1,4 @@
-import { ChangeEvent, ReactNode } from "react";
+import { ChangeEvent, JSX, ReactNode } from "react";
 
 interface HeadDataProp {
   id: number;

@@ -1,9 +1,9 @@
 import RatioImage from "@/CommonComponent/RatioImage";
 import { EmailAddress, General, ImagePath } from "@/Constant";
 import { PrintPreviewPropsType } from "@/Types/ContactType";
-import React, { LegacyRef } from "react";
+import React, { Ref } from "react";
 
-const PrintPreview = React.forwardRef(({selectedUser}:PrintPreviewPropsType, ref : LegacyRef<HTMLDivElement> | undefined) => {
+const PrintPreview = React.forwardRef(({selectedUser}:PrintPreviewPropsType, ref : Ref<HTMLDivElement> | undefined) => {
   return (
     <div className="profile-mail pt-0" id="DivIdToPrint" ref={ref}>
     <div className="d-flex">

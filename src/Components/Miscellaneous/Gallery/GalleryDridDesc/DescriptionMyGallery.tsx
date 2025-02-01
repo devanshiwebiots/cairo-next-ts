@@ -12,7 +12,7 @@ export const DescriptionMyGallery = () => {
           <Item original={`${ImagePath}/${item}`} width="1500" height="850" caption={`${MyPortfolioTitle}\n${descriptionGallery}`}>
             {({ ref, open }) => (
               <Link href={Href} onClick={open}>
-                <img className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1"  ref={ref as unknown as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="thumbnail" />
+                <img className="img-thumbnail border-bottom-0 p-2 rounded-0 rounded-top-1"  ref={ref} src={`${ImagePath}/${item}`} alt="thumbnail" />
                 <div className="caption border-top-0 p-2">
                   <h4>{MyPortfolioTitle}</h4>
                   <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>

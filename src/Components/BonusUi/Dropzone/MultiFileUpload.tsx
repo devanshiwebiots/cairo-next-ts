@@ -10,7 +10,7 @@ const MultiFileUpload = () => {
     <Col lg="6">
       <Card>
         <CommonCardHeader title={MultiFileUploads} span={FileUploadData} headClass='pb-0' spanClass='mt-1 mb-0'/>
-          <CommonFileUpload multiple={true} body={true} /> 
+          <CommonFileUpload multiple /> 
       </Card>
     </Col>
   )

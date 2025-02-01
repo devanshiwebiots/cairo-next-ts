@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import { InputType } from "reactstrap/types/lib/Input";
 
 export interface OrderHistoryTableColumns {

@@ -1,3 +1,4 @@
+import { JSX } from "react";
 export interface BasicTreesProp {
   variant?: string;
   isOpen?: boolean;

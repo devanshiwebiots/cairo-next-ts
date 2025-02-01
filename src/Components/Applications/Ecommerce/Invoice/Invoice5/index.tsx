@@ -7,13 +7,13 @@ import InvoiceFiveSign from "./InvoiceFiveSign";
 import InvoiceTable from "./InvoiceTable";
 
 const Invoice5Container = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+const contentRef = useRef<HTMLDivElement | null>(null);
 
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-  });
+const handlePrint = useReactToPrint({
+  contentRef,
+});
   return (
-    <div className="invoice-2" ref={componentRef}>
+    <div className="invoice-2" ref={contentRef}>
       <table style={{ width: "1070px", margin: " 0 auto" }}>
         <tbody>
           <tr>

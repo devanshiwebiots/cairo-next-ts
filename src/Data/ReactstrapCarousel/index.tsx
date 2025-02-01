@@ -259,7 +259,7 @@ export const SliesOnlyDataList = [
   export const AutoPlayVariantList = [
     {
         text: 'Height of image can be set by adding',
-        code: 'utoplay-swiper & sweeper-h '
+        code: 'autoplay-swiper & sweeper-h '
     },
     {
         text: 'classes and images will be swept autoplay.'

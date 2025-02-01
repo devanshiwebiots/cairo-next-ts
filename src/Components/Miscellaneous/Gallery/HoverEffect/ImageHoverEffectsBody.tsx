@@ -16,7 +16,7 @@ const ImageHoverEffectsBody = (props: { data: number }) => {
                 {({ ref, open }) => (
                   <Link href={Href} onClick={open}>
                     <div className="overflow-hidden">
-                      <img ref={ref as unknown as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/${item}`} alt="" className="w-100 h-100" />
+                      <img ref={ref} src={`${ImagePath}/${item}`} alt="" className="w-100 h-100" />
                     </div>
                   </Link>
                 )}

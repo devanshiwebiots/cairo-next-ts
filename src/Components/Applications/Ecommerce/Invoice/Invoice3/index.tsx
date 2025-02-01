@@ -7,13 +7,13 @@ import InvoiceThirdDetails from "./InvoiceThirdDetails";
 import InvoiceThirdHead from "./InvoiceThirdHead";
 
 const Invoice3Container = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+const contentRef = useRef<HTMLDivElement | null>(null);
 
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-  });
+const handlePrint = useReactToPrint({
+  contentRef,
+});
   return (
-    <div ref={componentRef} className="invoice-2">
+    <div ref={contentRef} className="invoice-2">
       <table style={{ width: "1075px", margin: "0 auto" }}>
         <tbody>
           <tr>
@@ -40,7 +40,7 @@ const Invoice3Container = () => {
           </tr>
           <tr>
             <td>
-            <InvoiceButtons handlePrint={handlePrint}/>
+              <InvoiceButtons handlePrint={handlePrint} />
             </td>
           </tr>
         </tbody>

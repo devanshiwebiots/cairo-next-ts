@@ -6,7 +6,7 @@ import { Button, Col, Input, Label, Row } from "reactstrap";
 
 const StaticForm: React.FC<StaticModalToggleProp> = ({ staticModalToggle }) => {
   return (
-    <Formik initialValues={{ email: "", password: "" }} onSubmit={(value) => console.log(value)}>
+    <Formik initialValues={{ email: "", password: "" }} onSubmit={() => console.log("")}>
       {() => (
         <Form>
           <Row className='g-3'>

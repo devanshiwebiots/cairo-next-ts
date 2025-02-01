@@ -33,7 +33,7 @@ export const JavaData = `
             <Row>
                 <Col xl="6">
                     <h3>Ace Text editor</h3>
-                    <small>mofi Admin panel</small>
+                    <small>Cairo Admin panel</small>
                 </Col>
                 <Col xl="6">
                     <Breadcrumb class="pull-right">
@@ -44,7 +44,7 @@ export const JavaData = `
                 </Col>
             </Row>
         </div>
-        <!--Page header emd -->
+        <!--Page header end -->
 `;
 
 export const CssData = `

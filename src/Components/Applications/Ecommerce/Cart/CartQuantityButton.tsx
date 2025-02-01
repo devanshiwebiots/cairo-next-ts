@@ -13,8 +13,6 @@ export const CartQuantityButton: React.FC<CartQuantityButtonProp> = ({item}) => 
   const handleIncrement = () => {
     dispatch(incrementData({ item }));
   };
-  console.log("Item total:", item.total);
-
 
   return (
     <td>

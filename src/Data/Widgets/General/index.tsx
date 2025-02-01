@@ -257,11 +257,6 @@ export const ShiftsSummaryChart : ApexOptions = {
         },
     },
     states: {
-        normal: {
-            filter: {
-                type: "none",
-            },
-        },
         hover: {
             filter: {
                 type: "none",

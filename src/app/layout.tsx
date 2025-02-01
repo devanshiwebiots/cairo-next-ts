@@ -10,6 +10,7 @@ import { getServerSession } from "next-auth";
 import { authoption } from "./api/auth/[...nextauth]/authOption";
 import SessionWrapper from "@/CommonComponent/SessionWrapper";
 import { CustomToaster } from "@/utils/Toaster";
+import ErrorBoundary from "@/CommonComponent/ErrorBoundry";
 
 const rubik = Rubik({
   weight: ["400", "500", "600", "700"],
@@ -31,19 +32,21 @@ const RootLayout = async ({ children }: RootLayoutProps) => {
     <I18nProvider language={lng}>
       <html>
         <head>
-          <link rel='icon' href='/assets/images/favicon.png' type='image/x-icon' />
-          <link rel='shortcut icon' href='/assets/images/favicon.png' type='image/x-icon' />
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
-          <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAjeJEPREBQFvAIqDSZliF0WjQrCld-Mh0'></script>
+          <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon" />
+          <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjeJEPREBQFvAIqDSZliF0WjQrCld-Mh0"></script>
         </head>
         <body suppressHydrationWarning={true} className={`${rubik.className}`}>
-          <SessionWrapper session={session}>
-            <NoSsr>
-              <MainProvider>{children}</MainProvider>
-              <CustomToaster/>
-            </NoSsr>
-          </SessionWrapper>
+          <ErrorBoundary>
+            <SessionWrapper session={session}>
+              <NoSsr>
+                <MainProvider>{children}</MainProvider>
+                <CustomToaster />
+              </NoSsr>
+            </SessionWrapper>
+          </ErrorBoundary>
         </body>
       </html>
     </I18nProvider>

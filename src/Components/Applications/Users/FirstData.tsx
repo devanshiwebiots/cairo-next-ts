@@ -20,7 +20,7 @@ const FirstData = () => {
                   <Item original={`${ImagePath}/other-images/profile-style-img3.png`} width="1600" height="800" caption="Image Caption 1">
                     {({ ref, open }) => (
                       <a href={Href} onClick={open}>
-                        <img className="img-fluid rounded" ref={ref as unknown as React.MutableRefObject<HTMLImageElement>} src={`${ImagePath}/other-images/profile-style-img3.png`} alt="image" />
+                        <img className="img-fluid rounded" ref={ref} src={`${ImagePath}/other-images/profile-style-img3.png`} alt="image" />
                       </a>
                     )}
                   </Item>

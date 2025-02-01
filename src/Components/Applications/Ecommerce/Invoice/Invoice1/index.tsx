@@ -8,14 +8,14 @@ import InvoiceOrderDetails from "./InvoiceOrderDetails/InvoiceOrderDetails";
 import InvoiceSign from "./InvoiceOrderDetails/InvoiceSign";
 
 const Invoice1Container = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef,
   });
   return (
     <Fragment>
-      <div ref={componentRef} className="invoice-1">
+      <div ref={contentRef} className="invoice-1">
         <table className="table-wrapper ">
           <tbody>
             <tr>
@@ -30,12 +30,12 @@ const Invoice1Container = () => {
             <tr>
               <InvoiceOrderDetails />
             </tr>
-          <tr style={{width:'100%', display:'flex', justifyContent:" space-between", marginTop:'12px'}}>
-            <InvoiceSign />
-           <td>
-           <InvoiceButtons handlePrint={handlePrint} />
-           </td>
-          </tr>
+            <tr style={{ width: "100%", display: "flex", justifyContent: " space-between", marginTop: "12px" }}>
+              <InvoiceSign />
+              <td>
+                <InvoiceButtons handlePrint={handlePrint} />
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>

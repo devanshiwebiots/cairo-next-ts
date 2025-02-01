@@ -1251,7 +1251,6 @@ export const OrderStatusCharts : ApexOptions = {
      stacked: true,
      animations: {
        enabled: true,
-       easing: "linear",
        dynamicAnimation: {
          speed: 1000,
        },
