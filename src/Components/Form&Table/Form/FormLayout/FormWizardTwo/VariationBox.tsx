@@ -1,4 +1,4 @@
-import { VerticalBoxData } from "@/Data/Form& Table/Form";
+import { VerticalBoxData } from "@/Data/Form&Table/Form";
 import { Input } from "reactstrap";
 
 const VariationBox = () => {

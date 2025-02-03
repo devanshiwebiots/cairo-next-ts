@@ -1,5 +1,5 @@
 import { SelectYourPaymentMethods, VisaAnimated } from "@/Constant";
-import { AnimatedPaymentData } from "@/Data/Form& Table/Form";
+import { AnimatedPaymentData } from "@/Data/Form&Table/Form";
 import { Fragment } from "react";
 import { Col, Input, Label } from "reactstrap";
 

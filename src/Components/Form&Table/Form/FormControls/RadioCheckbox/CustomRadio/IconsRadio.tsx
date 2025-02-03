@@ -1,5 +1,5 @@
 import { IconsRadios } from "@/Constant";
-import { CustomRadioList } from "@/Data/Form& Table/Form";
+import { CustomRadioList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 

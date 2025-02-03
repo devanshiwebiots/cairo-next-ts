@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { VariationOfAddon } from "@/Constant";
-import { VariationOfAddonData } from "@/Data/Form& Table/Form";
+import { VariationOfAddonData } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Card, CardBody, Col, Row } from "reactstrap";
 import VariationAddonsFormContent from "./VariationAddonsFormContent";

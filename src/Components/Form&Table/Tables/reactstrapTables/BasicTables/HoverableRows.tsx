@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { HoverableRowsWithHorizontalBorders } from "@/Constant";
-import { HoverableRowBody, HoverableRowData, HoverableRowHead } from "@/Data/Form& Table/Table/Reactstrap";
+import { HoverableRowBody, HoverableRowData, HoverableRowHead } from "@/Data/Form&Table/Table/Reactstrap";
 import React from "react";
 import { Card, Col } from "reactstrap";
 import CommonTable from "../Common/CommonTable";

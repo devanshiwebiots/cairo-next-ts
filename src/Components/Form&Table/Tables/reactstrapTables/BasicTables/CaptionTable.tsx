@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { CaptionTableTitle, UserList } from "@/Constant";
-import { CaptionBody, CaptionData, CaptionHead } from "@/Data/Form& Table/Table/Reactstrap";
+import { CaptionBody, CaptionData, CaptionHead } from "@/Data/Form&Table/Table/Reactstrap";
 import React from "react";
 import { Card, Col, Row } from "reactstrap";
 import CommonTable from "../Common/CommonTable";

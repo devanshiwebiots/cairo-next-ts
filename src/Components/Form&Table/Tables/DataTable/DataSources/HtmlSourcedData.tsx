@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { HtmlTableTittle, SearchTableButton } from "@/Constant";
-import { HtmlColumn, HtmlColumnData, HtmlData } from "@/Data/Form& Table/Table/DataTable/DataSourceData";
+import { HtmlColumn, HtmlColumnData, HtmlData } from "@/Data/Form&Table/Table/DataTable/DataSourceData";
 import React, { useMemo, useState } from "react";
 import DataTable from "react-data-table-component";
 import { Card, CardBody, Col, Input, Label } from "reactstrap";

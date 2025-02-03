@@ -1,9 +1,8 @@
 import { UpgradeParagraph, UpgradeSpanText, UpgradeTitle } from "@/Constant";
-import { UpgradeVariationData } from "@/Data/Form& Table/Form";
+import { UpgradeVariationData } from "@/Data/Form&Table/Form";
 import { Col, Input } from "reactstrap";
 
 const VariationCheckboxUpgrade = () => {
-
   return (
     <Col xl="8" md="7">
       <div className="card-wrapper border rounded-3 h-100 checkbox-checked">
@@ -16,7 +15,7 @@ const VariationCheckboxUpgrade = () => {
             <p className="text-muted mb-2">{UpgradeParagraph}</p>
           </div>
           <div className="variation-box">
-            {UpgradeVariationData.map(({id,check,text,sales},index) => (
+            {UpgradeVariationData.map(({ id, check, text, sales }, index) => (
               <div className="selection-box" key={index}>
                 <Input id={`feature${id}`} type="checkbox" defaultChecked={check} />
                 <div className="custom--mega-checkbox">

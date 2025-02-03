@@ -1,5 +1,5 @@
 import { AlertTitle, BadgesTable, CheckboxTitle, InputTitle, ProgressbarTitle, RadioButtonsTitle, SelectTitle, SwitchTable, TooltipTriggersTitle, UIComponentsTitle } from "@/Constant";
-import { AlertTableData, BadgeTableData, CheckBoxTableData, InputTableData, ProgressTableData, RadioBoxTableData, SelectBoxTableData, SwitchTableData, TooltipTableData, UiComponentData } from "@/Data/Form& Table/Table/TableComponent ";
+import { AlertTableData, BadgeTableData, CheckBoxTableData, InputTableData, ProgressTableData, RadioBoxTableData, SelectBoxTableData, SwitchTableData, TooltipTableData, UiComponentData } from "@/Data/Form&Table/Table/TableComponent ";
 import { Container, Row } from "reactstrap";
 import CommonTableComponent from "./Common/CommonTableComponent";
 

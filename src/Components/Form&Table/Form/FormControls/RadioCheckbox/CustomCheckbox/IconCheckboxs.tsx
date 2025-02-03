@@ -1,5 +1,5 @@
 import { IconCheckbox } from "@/Constant";
-import { CustomCheckboxList } from "@/Data/Form& Table/Form";
+import { CustomCheckboxList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 

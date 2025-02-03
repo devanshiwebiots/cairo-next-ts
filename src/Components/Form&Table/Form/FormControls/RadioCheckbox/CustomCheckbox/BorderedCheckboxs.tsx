@@ -1,6 +1,6 @@
 import { Col, Input, Label } from "reactstrap";
 import { BorderedCheckbox, PrimaryCheckboxPrimary } from "@/Constant";
-import { BorderCheckboxData } from "@/Data/Form& Table/Form";
+import { BorderCheckboxData } from "@/Data/Form&Table/Form";
 
 export const BorderedCheckboxs = () => {
   return (
@@ -10,7 +10,9 @@ export const BorderedCheckboxs = () => {
         {BorderCheckboxData.map(({ color, text }, index) => (
           <div className={`form-check checkbox checkbox-${color} mb-0`} key={index}>
             <Input id={`checkbox-${color}`} type="checkbox" />
-            <Label htmlFor={`checkbox-${color}`} check>{text}</Label>
+            <Label htmlFor={`checkbox-${color}`} check>
+              {text}
+            </Label>
           </div>
         ))}
       </div>

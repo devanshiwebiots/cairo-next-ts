@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { SelectSizings } from "@/Constant";
-import { SizingFormData, SizingFormDataList } from "@/Data/Form& Table/Form";
+import { SizingFormData, SizingFormDataList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Card, CardBody, Col, Input } from "reactstrap";
 

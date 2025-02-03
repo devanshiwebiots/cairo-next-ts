@@ -1,4 +1,4 @@
-import { HomeAndOfficeData } from "@/Data/Form& Table/Form";
+import { HomeAndOfficeData } from "@/Data/Form&Table/Form";
 import { ShippingInformationCommonProps } from "@/Types/FormType";
 import React from "react";
 import { Col, FormGroup, Input, Label, Row } from "reactstrap";
@@ -25,9 +25,9 @@ const HomeAndOfficeAddress: React.FC<ShippingInformationCommonProps> = ({ radioB
               </div>
             </div>
             <div className="shipping-address">
-                <h6>{data.name}</h6>
-                <span>Address: {data.address}</span>
-                <span>Contact: {data.contact}</span>
+              <h6>{data.name}</h6>
+              <span>Address: {data.address}</span>
+              <span>Contact: {data.contact}</span>
             </div>
           </div>
         </Col>

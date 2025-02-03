@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { RadioChecked, RadioToggleButton } from "@/Constant";
-import { RadioToggleData, RadioToggleDataList } from "@/Data/Form& Table/Form";
+import { RadioToggleData, RadioToggleDataList } from "@/Data/Form&Table/Form";
 import React, { Fragment } from "react";
 import { Card, CardBody, Col, Input, Label } from "reactstrap";
 

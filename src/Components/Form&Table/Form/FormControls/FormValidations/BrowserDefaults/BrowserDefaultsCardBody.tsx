@@ -1,6 +1,6 @@
 import { Button, CardBody, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 import { AgreeToThePolicies, ChooseFile, Description, EmailAddress, EmailPlaceholder, FirstName, FirstNamePlaceholder, PasswordBrowserDefault, SelectYourPaymentMethod, State, StateChoose, Submit, SubmitButton, SureInformation } from "@/Constant";
-import { BrowserRadioList, BrowserStateList } from "@/Data/Form& Table/Form";
+import { BrowserRadioList, BrowserStateList } from "@/Data/Form&Table/Form";
 
 export const BrowserDefaultsCardBody = () => {
   return (
@@ -16,13 +16,13 @@ export const BrowserDefaultsCardBody = () => {
           <Col sm="12">
             <FormGroup>
               <Label>{EmailAddress}</Label>
-              <Input type="email" placeholder={EmailPlaceholder} required/>
+              <Input type="email" placeholder={EmailPlaceholder} required />
             </FormGroup>
           </Col>
           <Col sm="12">
             <FormGroup>
               <Label htmlFor="inputPassword2">{PasswordBrowserDefault}</Label>
-              <Input id="inputPassword2" type="password" required autoComplete="off"/>
+              <Input id="inputPassword2" type="password" required autoComplete="off" />
             </FormGroup>
           </Col>
           <Col sm="12">
@@ -30,7 +30,11 @@ export const BrowserDefaultsCardBody = () => {
               <Label>{State}</Label>
               <Input type="select" id="validationDefault04" required>
                 <option>{StateChoose}</option>
-                {BrowserStateList.map((item, index) => (<option value={item} key={index}>{item}</option>))}
+                {BrowserStateList.map((item, index) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </Input>
             </FormGroup>
           </Col>
@@ -48,7 +52,9 @@ export const BrowserDefaultsCardBody = () => {
                   {BrowserRadioList.map(({ id, defaultChecked, text }, index) => (
                     <FormGroup check key={index}>
                       <Input type="radio" name="flexRadioDefault" id={`flexRadioDefault${id}`} required defaultChecked={defaultChecked} />
-                      <Label check htmlFor={`flexRadioDefault${id}`}>{text}</Label>
+                      <Label check htmlFor={`flexRadioDefault${id}`}>
+                        {text}
+                      </Label>
                     </FormGroup>
                   ))}
                 </div>
@@ -63,12 +69,16 @@ export const BrowserDefaultsCardBody = () => {
           </Col>
           <Col sm="12" className="checkbox-checked mt-2 mb-2">
             <Input id="flexCheckDefault" type="checkbox" />
-            <Label className="ms-2" htmlFor="flexCheckDefault" check>{AgreeToThePolicies}</Label>
+            <Label className="ms-2" htmlFor="flexCheckDefault" check>
+              {AgreeToThePolicies}
+            </Label>
           </Col>
           <Col sm="12">
             <FormGroup className="form-switch mb-2" check>
               <Input id="flexSwitchCheckDefault" type="checkbox" role="switch" required />
-              <Label htmlFor="flexSwitchCheckDefault" check>{SureInformation}</Label>
+              <Label htmlFor="flexSwitchCheckDefault" check>
+                {SureInformation}
+              </Label>
             </FormGroup>
           </Col>
           <Col sm="12">

@@ -1,4 +1,4 @@
-import { BorderedRadioDataa } from "@/Data/Form& Table/Form";
+import { BorderedRadioDataa } from "@/Data/Form&Table/Form";
 import React, { Fragment } from "react";
 import { Input, Label } from "reactstrap";
 

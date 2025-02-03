@@ -1,6 +1,6 @@
 import ShowError from "@/Components/Other/common/ShowError";
 import { AccountType, Continue } from "@/Constant";
-import { SelectAmountData } from "@/Data/Form& Table/Form";
+import { SelectAmountData } from "@/Data/Form&Table/Form";
 import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { setAccountType } from "@/Redux/Reducers/FormWizardTwoSlice";
 import { BusinessFormCommonProps } from "@/Types/FormType";
@@ -49,8 +49,10 @@ const SelectAccount: React.FC<BusinessFormCommonProps> = ({ callbackActive }) =>
           </FormGroup>
         </Col>
         <Col xs="12" className="text-end mt-3">
-        <Button onClick={handleNextButton} color="primary">{Continue}</Button>
-      </Col>
+          <Button onClick={handleNextButton} color="primary">
+            {Continue}
+          </Button>
+        </Col>
       </Row>
     </Form>
   );

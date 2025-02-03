@@ -1,4 +1,4 @@
-import { ModalOneDatas } from "@/Data/Form& Table/Form";
+import { ModalOneDatas } from "@/Data/Form&Table/Form";
 import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { getValue } from "@/Redux/Reducers/TwoFactorSlice";
 import React from "react";

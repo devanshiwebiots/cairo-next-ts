@@ -1,4 +1,4 @@
-import { DefaultCheckBoxDataList } from "@/Data/Form& Table/Form";
+import { DefaultCheckBoxDataList } from "@/Data/Form&Table/Form";
 import React, { Fragment } from "react";
 import { Col, Input, Label } from "reactstrap";
 

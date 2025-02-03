@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { TableHeadOption } from "@/Constant";
-import { TableHeadOptionBody, TableHeadOptionData, TableHeadOptionHead } from "@/Data/Form& Table/Table/Reactstrap";
+import { TableHeadOptionBody, TableHeadOptionData, TableHeadOptionHead } from "@/Data/Form&Table/Table/Reactstrap";
 import React from "react";
 import { Card, Col, Row } from "reactstrap";
 import CommonTable from "../Common/CommonTable";

@@ -1,5 +1,5 @@
 import { BasicRadioAndCheckboxMaps, BasicRadioAndCheckboxSimpleRadios } from "@/Constant";
-import { BasicRadioDataList } from "@/Data/Form& Table/Form";
+import { BasicRadioDataList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 
@@ -17,7 +17,7 @@ const SimpleRadio = () => {
           </div>
           {BasicRadioDataList.map(({ id, text }, index) => (
             <div className="form-check form-check-inline radio radio-primary" key={index}>
-                <Input id={id} type="radio" name="radio5" defaultChecked />
+              <Input id={id} type="radio" name="radio5" defaultChecked />
               <Label className="mb-0" htmlFor={id} check>
                 {text}
               </Label>

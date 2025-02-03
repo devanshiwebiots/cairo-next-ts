@@ -1,14 +1,14 @@
-import { ShippingNavData } from "@/Data/Form& Table/Form";
+import { ShippingNavData } from "@/Data/Form&Table/Form";
 import { NavComponentProp } from "@/Types/FormType";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
-const NavComponent :React.FC<NavComponentProp> = ({ callbackActive, activeTab }) => {
+const NavComponent: React.FC<NavComponentProp> = ({ callbackActive, activeTab }) => {
   const handleTab = (id: number | undefined) => {
     if (id !== undefined) {
       callbackActive(id);
     }
   };
-  
+
   return (
     <Nav className="nav-pills horizontal-options shipping-options">
       {ShippingNavData.map((data, index) => (

@@ -1,5 +1,5 @@
 import { SearchTableButton } from "@/Constant";
-import { StateSavingColumns, StateSavingDataList } from "@/Data/Form& Table/Table/DataTable/StateSavingData";
+import { StateSavingColumns, StateSavingDataList } from "@/Data/Form&Table/Table/DataTable/StateSavingData";
 import React, { useMemo, useState } from "react";
 import DataTable from "react-data-table-component";
 import { Card, CardBody, Col, Input, Label } from "reactstrap";

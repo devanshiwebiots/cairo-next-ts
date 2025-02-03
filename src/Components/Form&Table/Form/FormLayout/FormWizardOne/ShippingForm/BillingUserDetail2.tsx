@@ -1,5 +1,5 @@
 import { Country, EnterYourQueries, OtherNotes, RememberMeForNextTime, State, ZipCode } from "@/Constant";
-import { CountryList } from "@/Data/Form& Table/Form";
+import { CountryList } from "@/Data/Form&Table/Form";
 import { BillingUserDetailsProp } from "@/Types/FormType";
 import React, { Fragment } from "react";
 import { Col, FormGroup, Input, Label } from "reactstrap";

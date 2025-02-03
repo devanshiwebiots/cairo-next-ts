@@ -1,5 +1,5 @@
 import { FilledRadios, ProductRadio } from "@/Constant";
-import { FillRadioList } from "@/Data/Form& Table/Form";
+import { FillRadioList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 

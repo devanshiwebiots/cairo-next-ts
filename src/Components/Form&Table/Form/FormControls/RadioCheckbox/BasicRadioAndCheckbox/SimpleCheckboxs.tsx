@@ -1,5 +1,5 @@
 import { BasicRadioAndCheckboxBlog, SimpleCheckbox } from "@/Constant";
-import { BasicRadioCheckboxDataList } from "@/Data/Form& Table/Form";
+import { BasicRadioCheckboxDataList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 

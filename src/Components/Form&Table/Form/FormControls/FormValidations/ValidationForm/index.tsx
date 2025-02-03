@@ -4,7 +4,7 @@ import { ValidationsForms } from "@/Constant";
 import { Card, CardBody, Col } from "reactstrap";
 import { FormValidationProp } from "@/Types/FormType";
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
-import { FormValidationSchema, ValidationFormData, ValidationFormInitialValue } from "@/Data/Form& Table/Form";
+import { FormValidationSchema, ValidationFormData, ValidationFormInitialValue } from "@/Data/Form&Table/Form";
 import { FormValidations } from "./FormValidations";
 
 const ValidationForm = () => {
@@ -18,7 +18,7 @@ const ValidationForm = () => {
   return (
     <Col xl="6">
       <Card className="height-equal">
-        <CommonCardHeader title={ValidationsForms} span={ValidationFormData} spanClass='mt-1 mb-0'headClass="pb-0" />
+        <CommonCardHeader title={ValidationsForms} span={ValidationFormData} spanClass="mt-1 mb-0" headClass="pb-0" />
         <CardBody>
           <Formik initialValues={ValidationFormInitialValue} onSubmit={handleSubmit} validationSchema={FormValidationSchema}>
             {({ errors }) => <FormValidations submitErrors={submitErrors} setSubmitError={setSubmitError} errors={errors} />}

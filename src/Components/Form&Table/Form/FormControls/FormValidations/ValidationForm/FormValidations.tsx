@@ -2,7 +2,7 @@ import { ErrorMessage, Field, Form } from "formik";
 import { AgreeCondition, ChooseFiles, City, Description, FirstName, LookGood, MarkFirstNamePlaceholder, PasswordValidation, PayMethodTitle, SelectThemeTitle, State, SubmitButton, TextAreaPlaceHolder, Zip } from "@/Constant";
 import { Button, Col, FormFeedback, FormGroup, Label, Row } from "reactstrap";
 import { FormValidationsProp } from "@/Types/FormType";
-import { ValidationFormStateList, ValidationRadioList, ValidationStateList } from "@/Data/Form& Table/Form";
+import { ValidationFormStateList, ValidationRadioList, ValidationStateList } from "@/Data/Form&Table/Form";
 
 export const FormValidations: React.FC<FormValidationsProp> = ({ errors, submitErrors, setSubmitError }) => {
   return (
@@ -27,7 +27,11 @@ export const FormValidations: React.FC<FormValidationsProp> = ({ errors, submitE
           <FormGroup>
             <Label check>{State}</Label>
             <Field name="state" as="select" className={`form-control form-select ${submitErrors && `${errors.state ? "is-invalid" : "is-valid"}`}`}>
-              {ValidationFormStateList.map((item, index) => (<option value={item} key={index}>{item}</option>))}
+              {ValidationFormStateList.map((item, index) => (
+                <option value={item} key={index}>
+                  {item}
+                </option>
+              ))}
             </Field>
             <ErrorMessage name="state" component="span" className="invalid-feedback" />
             <FormFeedback valid>{LookGood}</FormFeedback>
@@ -57,7 +61,9 @@ export const FormValidations: React.FC<FormValidationsProp> = ({ errors, submitE
                 {ValidationRadioList.map(({ id, text }, index) => (
                   <FormGroup check key={index}>
                     <Field className="form-check-input" id={`validationFormCheck${id}`} type="radio" name="payment" value={text} />
-                    <Label htmlFor={`validationFormCheck${id}`} className={`${submitErrors && ` ${errors.payment ? "text-danger" : "text-success"}`}`} check>{text}</Label>
+                    <Label htmlFor={`validationFormCheck${id}`} className={`${submitErrors && ` ${errors.payment ? "text-danger" : "text-success"}`}`} check>
+                      {text}
+                    </Label>
                   </FormGroup>
                 ))}
               </div>
@@ -68,7 +74,11 @@ export const FormValidations: React.FC<FormValidationsProp> = ({ errors, submitE
           <FormGroup>
             <Field as="select" name="theme" className={`form-select ${submitErrors && `${errors.theme ? "is-invalid" : "is-valid"}`}`}>
               <option defaultValue="">{SelectThemeTitle}</option>
-              {ValidationStateList.map((item, index) => (<option value={item} key={index}>{item}</option>))}
+              {ValidationStateList.map((item, index) => (
+                <option value={item} key={index}>
+                  {item}
+                </option>
+              ))}
             </Field>
             <ErrorMessage name="theme" component="span" className="invalid-feedback" />
           </FormGroup>
@@ -90,11 +100,15 @@ export const FormValidations: React.FC<FormValidationsProp> = ({ errors, submitE
         <Col sm="12">
           <FormGroup check>
             <Field name="terms" className={`form-check-input ${submitErrors && ` ${errors.terms ? "text-danger" : "text-success"}`}`} id="invalidCheck" type="checkbox" value="Agree to terms and conditions" />
-            <Label className={`${submitErrors && ` ${errors.terms ? "text-danger" : "text-success"}`}`} htmlFor="invalidCheck" check>{AgreeCondition}</Label>
+            <Label className={`${submitErrors && ` ${errors.terms ? "text-danger" : "text-success"}`}`} htmlFor="invalidCheck" check>
+              {AgreeCondition}
+            </Label>
           </FormGroup>
         </Col>
         <Col sm="12">
-          <Button color="primary" type="submit" onClick={() => setSubmitError(true)}>{SubmitButton}</Button>
+          <Button color="primary" type="submit" onClick={() => setSubmitError(true)}>
+            {SubmitButton}
+          </Button>
         </Col>
       </Row>
     </Form>

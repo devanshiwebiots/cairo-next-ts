@@ -1,7 +1,7 @@
 import { Badge, Card, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 import { Fragment } from "react";
 import { VerticalStyleFormProp } from "@/Types/FormType";
-import { VerticalStyleDataList } from "@/Data/Form& Table/Form";
+import { VerticalStyleDataList } from "@/Data/Form&Table/Form";
 
 const VerticalStyleForm = () => {
   return (
@@ -22,7 +22,9 @@ const VerticalStyleForm = () => {
                         <span className={`flex-grow-1 ${mediaBodyClass}`}>
                           <span className="mt-0 mega-title-badge">
                             {badgeTitle}
-                            <Badge color={color} className="pull-right digits">{digits}</Badge>
+                            <Badge color={color} className="pull-right digits">
+                              {digits}
+                            </Badge>
                           </span>
                           <span className={spanClass}>
                             {star && star.map(({ id, starClass }) => <i key={id} className={`icofont icofont-star ${starClass}`}></i>)}

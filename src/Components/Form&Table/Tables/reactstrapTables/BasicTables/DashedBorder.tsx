@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { DashedBorderTitle } from "@/Constant";
-import { DashedBorderBody, DashedBorderData, DashedBorderList } from "@/Data/Form& Table/Table/Reactstrap";
+import { DashedBorderBody, DashedBorderData, DashedBorderList } from "@/Data/Form&Table/Table/Reactstrap";
 import React from "react";
 import { Card, Col, Row } from "reactstrap";
 import CommonTable from "../Common/CommonTable";

@@ -1,6 +1,6 @@
 import RatioImage from "@/CommonComponent/RatioImage";
 import { ImagePath } from "@/Constant";
-import { OfferBorderStyleDataList } from "@/Data/Form& Table/Form";
+import { OfferBorderStyleDataList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Card, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 

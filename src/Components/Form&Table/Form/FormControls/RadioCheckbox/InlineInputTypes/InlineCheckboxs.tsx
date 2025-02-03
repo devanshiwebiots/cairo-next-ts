@@ -1,5 +1,5 @@
 import { InlineCheckbox } from "@/Constant";
-import { InlineCheckboxData } from "@/Data/Form& Table/Form";
+import { InlineCheckboxData } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 

@@ -1,4 +1,4 @@
-import { VariationSwitchList } from "@/Data/Form& Table/Form";
+import { VariationSwitchList } from "@/Data/Form&Table/Form";
 import React, { Fragment } from "react";
 import { Input, Label } from "reactstrap";
 

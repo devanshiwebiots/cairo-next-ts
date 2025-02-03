@@ -1,5 +1,5 @@
 import { InlineRadio } from "@/Constant";
-import { InlineRadioData } from "@/Data/Form& Table/Form";
+import { InlineRadioData } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Col, Input, Label } from "reactstrap";
 

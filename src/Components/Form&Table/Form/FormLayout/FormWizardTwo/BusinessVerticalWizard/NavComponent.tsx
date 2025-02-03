@@ -1,4 +1,4 @@
-import { BussinessVerticalData } from "@/Data/Form& Table/Form";
+import { BussinessVerticalData } from "@/Data/Form&Table/Form";
 import { BusinessFormCommonProps } from "@/Types/FormType";
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";

@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { Sizingtabless } from "@/Constant";
-import { SizingTablesBody, SizingTablesData, SizingTablesList } from "@/Data/Form& Table/Table/Reactstrap";
+import { SizingTablesBody, SizingTablesData, SizingTablesList } from "@/Data/Form&Table/Table/Reactstrap";
 import React from "react";
 import { Card, Col, Row } from "reactstrap";
 import CommonTable from "../Common/CommonTable";

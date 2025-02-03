@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { CheckMeOut, EmailAddress, EmailFloatingPlaceholder, FloatingPasswordPlaceholder, FormFloating, PasswordFloatingPlaceholder, SignInButton } from "@/Constant";
-import { FloatingFormData } from "@/Data/Form& Table/Form";
+import { FloatingFormData } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Button, Card, CardBody, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 
@@ -21,7 +21,7 @@ const FloatingForm = () => {
                 </Col>
                 <Col sm="12" className="mt-2">
                   <FormGroup floating>
-                    <Input type="password" placeholder={PasswordFloatingPlaceholder} autoComplete="off"/>
+                    <Input type="password" placeholder={PasswordFloatingPlaceholder} autoComplete="off" />
                     <Label check>{FloatingPasswordPlaceholder}</Label>
                   </FormGroup>
                 </Col>

@@ -1,6 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { DefaultSwitche } from "@/Constant";
-import { DefaultSwitchData, DefaultSwitchDataList } from "@/Data/Form& Table/Form";
+import { DefaultSwitchData, DefaultSwitchDataList } from "@/Data/Form&Table/Form";
 import React from "react";
 import { Card, CardBody, Col, Input, Label, Row } from "reactstrap";
 import CustomSwitche from "./CustomSwitche";
