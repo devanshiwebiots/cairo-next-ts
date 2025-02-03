@@ -175,7 +175,7 @@ export const BasicData = [
 
     export const CustomModalData = [
     {
-      text: "Custom Modal make by Mofi.",
+      text: "Custom Modal make by Cairo.",
     },
   ];
 

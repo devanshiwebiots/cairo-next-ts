@@ -91,14 +91,7 @@ interface SpanType {
     modalThird: boolean;
     modalThirdToggle: () => void;
   }
-  
-  export interface CommonMofiModalTitleType {
-    heading: string;
-    subHeading: string;
-    text: string;
-  }
-  
-  interface ItemProp {
+   interface ItemProp {
     id: number;
     placement?: any;
     Popoverheader?: string;
@@ -174,7 +167,7 @@ interface SpanType {
     item: ArrayType;
   }
   
-  export interface CommonMofiModalTitleType {
+  export interface CommonCairoModalTitleType {
     heading: string;
     subHeading: string;
     text: string;

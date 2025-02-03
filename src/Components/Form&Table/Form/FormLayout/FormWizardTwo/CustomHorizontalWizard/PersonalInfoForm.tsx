@@ -1,5 +1,5 @@
 import ShowError from '@/Components/Other/common/ShowError'
-import { AgreeToTermsAndConditions, ContactNumber, Continue, Email, emailtxt, EnterFirstName, EnterLastName, EnterMobileNumber, EnterNumber, EnterYourFirstName, FirstName, LastName, MofiEmail, State, ZipCode } from '@/Constant'
+import { AgreeToTermsAndConditions, ContactNumber, Continue, Email, emailtxt, EnterFirstName, EnterLastName, EnterMobileNumber, EnterNumber, EnterYourFirstName, FirstName, LastName, CairoEmail, State, ZipCode } from "@/Constant";
 import { useAppDispatch, useAppSelector } from '@/Redux/Hooks'
 import { setPersonalDetailsForm } from '@/Redux/Reducers/FormWizardTwoSlice'
 import { BusinessFormCommonProps } from '@/Types/FormType'

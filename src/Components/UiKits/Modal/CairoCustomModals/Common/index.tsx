@@ -1,7 +1,7 @@
-import { CommonMofiModalTitleType } from "@/Types/UikitsType";
+import { CommonCairoModalTitleType } from "@/Types/UikitsType";
 import { Fragment } from "react";
 
-export const CommonMofiModalTitle: React.FC<CommonMofiModalTitleType> = ({ heading, subHeading, text }) => {
+export const CommonCairoModalTitle: React.FC<CommonCairoModalTitleType> = ({ heading, subHeading, text }) => {
   return (
     <Fragment>
       <ul className="simple-list d-flex dot-group pb-3 pt-0">
