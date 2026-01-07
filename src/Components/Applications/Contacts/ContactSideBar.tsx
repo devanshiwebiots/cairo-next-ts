@@ -20,7 +20,7 @@ const ContactSideBar :React.FC<ContactSidebarCallbackProp> = ({ callback }) => {
               <div className="email-app-sidebar left-bookmark">
                 <div className="d-flex">
                   <div className="d-flex-size-email">
-                    <Image className="me-3 rounded-circle" src={`${ImagePath}/user/user.png`}  alt="" width={52} height={52}/>
+                    <Image className="me-3 rounded-circle" src={`${ImagePath}/user/user.png`}  alt="" width={52} height={52} unoptimized/>
                   </div>
                   <div className="flex-grow-1">
                     <h4>MARK JENCO</h4>

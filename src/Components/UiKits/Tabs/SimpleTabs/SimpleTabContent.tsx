@@ -7,11 +7,11 @@ export const SimpleTabContent: React.FC<TabContentProp> = ({ basicTab }) => {
   return (
     <TabContent activeTab={basicTab}>
       <TabPane tabId="1">
-        <p className="pt-3">This is some placeholder content the <strong> Home tab's</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation. Bootstrap provides a flexible and easy-to-use tab component that allows developers to create tabbed navigation effortlessly.</p>
+        <p className="pt-3">This is some placeholder content the <strong>{" Home tab's"}</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation. Bootstrap provides a flexible and easy-to-use tab component that allows developers to create tabbed navigation effortlessly.</p>
       </TabPane>
       <TabPane tabId="2">
         <div className="pt-3 mb-0">
-          <div className="flex-space flex-wrap align-items-center"><Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" width={100} height={100}/>
+          <div className="flex-space flex-wrap align-items-center"><Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" width={100} height={100} unoptimized/>
             <ul className="d-flex flex-column gap-1">
               <li> <strong>Visit Us:</strong> 2600 Hollywood Blvd,Florida, United States-33020</li>
               <li> <strong>Mail Us:</strong> contact@us@gmail.com</li>
@@ -22,7 +22,7 @@ export const SimpleTabContent: React.FC<TabContentProp> = ({ basicTab }) => {
       </TabPane>
       <TabPane tabId="3">
         <ul className="pt-3 d-flex flex-column gap-1">
-          <li>Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.</li>
+          <li>Us Technology offers web &amp; {"mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them."}</li>
           <li> <strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States-	33020</li>
           <li> <strong>Mail Us:</strong> contact@us@gmail.com</li>
           <li> <strong>Contact Number: </strong> (954) 357-7760</li>

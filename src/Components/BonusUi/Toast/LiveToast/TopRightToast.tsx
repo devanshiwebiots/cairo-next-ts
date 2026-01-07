@@ -20,12 +20,12 @@ const TopRightToast = () => {
       <div className="toast-container position-fixed top-0 end-0 p-3 toast-index toast-rtl">
         <Toast fade isOpen={open}>
           <div className="toast-header toast-img">
-            <Image className="rounded me-2" src={`${ImagePath}/product-lists/profile.png`} alt="profile" width={30} height={30}/>
+            <Image className="rounded me-2" src={`${ImagePath}/product-lists/profile.png`} alt="profile" width={30} height={30} unoptimized/>
             <strong className="me-auto">Cairo theme</strong>
             <small>5 min ago</small>
             <Button close onClick={() => setOpen(false)}/>
           </div>
-          <ToastBody className="toast-dark">Hello, I'm a web-designer.</ToastBody>
+          <ToastBody className="toast-dark">{"Hello, I'm a web-designer."}</ToastBody>
         </Toast>
       </div>
     </Fragment>

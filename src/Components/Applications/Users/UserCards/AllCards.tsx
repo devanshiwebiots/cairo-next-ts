@@ -15,7 +15,7 @@ const AllCards = () => {
             <CardBody>
               <div className="social-img-wrap">
                 <div className="social-img">
-                  <Image className="img-fluid" src={`${ImagePath}/${item.avatar}`} alt="user" width={68} height={68} priority/>
+                  <Image className="img-fluid" src={`${ImagePath}/${item.avatar}`} alt="user" width={68} height={68} priority unoptimized/>
                 </div>
                 <div className="edit-icon">
                   <SVG iconId="profile-check" />

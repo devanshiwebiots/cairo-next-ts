@@ -16,7 +16,7 @@ const ProfileScrollable = () => {
                     <ListGroup>
                         {ProfileScrollList.map(({text, src}, index) => (
                             <ListGroupItem tag="a" href={Href} className="list-group-item-action list-hover-primary" key={index}>
-                                 <Image className="rounded-circle" src={`${ImagePath}/${src}`} alt="user" width={40} height={40}/>{text}
+                                 <Image className="rounded-circle" src={`${ImagePath}/${src}`} alt="user" width={40} height={40} unoptimized/>{text}
                             </ListGroupItem>
                         ))}
                     </ListGroup>

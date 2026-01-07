@@ -24,7 +24,7 @@ const DraftEmailContent :React.FC<CommonDataType> = ({data,ids}) => {
             <SVG className={`important-mail ${fill ? "active" : ""}`} iconId="fill-star"/>
           </div> 
           <div className="rounded-border">
-          {data.image && <Image src={`${ImagePath}/user/${data.image}`} alt="user" width={36} height={36}/>}
+          {data.image && <Image src={`${ImagePath}/user/${data.image}`} alt="user" width={36} height={36} unoptimized/>}
             {data.shortName && <div className={data.color === "success" ? "circle-success" : ""}>
               <p className={`txt-${data.color}`}>{data.shortName}</p>
             </div>}

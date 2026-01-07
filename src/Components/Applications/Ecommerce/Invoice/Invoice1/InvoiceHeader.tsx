@@ -10,7 +10,7 @@ const InvoiceHeader = () => {
         <tbody>
           <tr>
             <td>
-              <Image src={`${ImagePath}/logo/logo-1.png`} alt="logo" width={114} height={38}/>
+              <Image src={`${ImagePath}/logo/logo-1.png`} alt="logo" width={114} height={38} unoptimized/>
               <span style={{ color: "#52526C", opacity: "0.8", display: "block", marginTop: "10px" }}>202-555-0258</span>
             </td>
             <td className="address" style={{ textAlign: "right", color: "#52526C", opacity: "0.8", width: "16%" }}>

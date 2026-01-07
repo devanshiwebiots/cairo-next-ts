@@ -80,14 +80,14 @@ const MobileApp = () => {
               <div className="user-details customers">
                 <ul>
                   <li className="d-inline-block">
-                    <Image src={`${ImagePath}/general-widgets/user/${data.image1}`} alt="" width={30} height={30} />
+                    <Image src={`${ImagePath}/general-widgets/user/${data.image1}`} alt="" width={30} height={30} unoptimized/>
                   </li>
                   <li className="d-inline-block">
-                    <Image src={`${ImagePath}/general-widgets/user/${data.image2}`} alt="" width={30} height={30} />
+                    <Image src={`${ImagePath}/general-widgets/user/${data.image2}`} alt="" width={30} height={30} unoptimized/>
                   </li>
                   {data.image3 && (
                     <li className="d-inline-block">
-                      <Image src={`${ImagePath}/general-widgets/user/${data.image3}`} alt="" width={30} height={30} />
+                      <Image src={`${ImagePath}/general-widgets/user/${data.image3}`} alt="" width={30} height={30} unoptimized/>
                     </li>
                   )}
                 </ul>

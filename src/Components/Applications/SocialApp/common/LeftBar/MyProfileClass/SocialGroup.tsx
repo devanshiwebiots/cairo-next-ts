@@ -7,7 +7,7 @@ const SocialGroup = () => {
     <ul className="justify-content-center">
       {SocialGroupData.map((data, i) => (
         <li key={i} className="d-inline-block">
-          <Image src={`${ImagePath}/user/${data.imageName}`} className="img-40 rounded-circle" id={`UncontrolledTooltipExample-${i}`} alt="" width={40} height={40}/>
+          <Image src={`${ImagePath}/user/${data.imageName}`} className="img-40 rounded-circle" id={`UncontrolledTooltipExample-${i}`} alt="" width={40} height={40} unoptimized/>
         </li>
       ))}
     </ul>

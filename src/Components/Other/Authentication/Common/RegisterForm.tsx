@@ -15,8 +15,8 @@ export const RegisterForm:React.FC<SignupProp> = ({ logoClass }) => {
     <div>
       <div>
         <Link className={`logo ${logoClass}`} href={`/dashboard/default_dashboard`}>
-          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" width={114} height={38}/>
-          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" width={114} height={38}/>
+          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" width={114} height={38} unoptimized/>
+          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" width={114} height={38} unoptimized/>
         </Link>
       </div>
       <div className="login-main">

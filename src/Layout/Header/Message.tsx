@@ -17,7 +17,7 @@ export const MessageHeader = () => {
                     {MessageData?.map((item, index) => (
                         <li key={index}>
                             <div className="d-flex align-items-start">
-                                <Image src={`${ImagePath}/user/${item.image}`} className='message-img' alt="image" width={40} height={40}/>
+                                <Image src={`${ImagePath}/user/${item.image}`} className='message-img' alt="image" width={40} height={40} unoptimized/>
                                 <div className="flex-grow-1">
                                     <h5 className="mb-1"><Link href={`/chat/private_chat`}>{item.title}</Link></h5>
                                     <p>{item.description}</p>

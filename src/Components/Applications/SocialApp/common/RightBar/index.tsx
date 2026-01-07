@@ -28,7 +28,7 @@ const RightBar = () => {
     </Col>
     <Col xl='12' lg="4" md="6" sm="12" className='box-col-6'>
       <div className='card'>
-        <Image src={`${ImagePath}/social-app/timeline-4.png`} className='img-fluid' alt='' width={380} height={253}/>
+        <Image src={`${ImagePath}/social-app/timeline-4.png`} className='img-fluid' alt='' width={380} height={253} unoptimized/>
       </div>
     </Col>
    </Row>

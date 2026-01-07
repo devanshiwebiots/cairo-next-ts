@@ -14,7 +14,7 @@ const LatestPhotosCollspan: React.FC<MyProfileClassCollapseProp> = ({isFilter}) 
         {LatestPhotoData.map((item ,i) => (
             <li key={i}>
                 <div className='latest-post'>
-                    <Image src={`${ImagePath}/social-app/${item.image}`} className='img-fluid' alt='' width={70} height={70}/>
+                    <Image src={`${ImagePath}/social-app/${item.image}`} className='img-fluid' alt='' width={70} height={70} unoptimized/>
                 </div>
             </li>
         ))}

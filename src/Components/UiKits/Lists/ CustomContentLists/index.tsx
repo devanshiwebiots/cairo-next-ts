@@ -16,7 +16,7 @@ const  CustomContentLists = () => {
             <ListGroupItem tag="a" href={Href} className="list-group-item-action active bg-primary">
               <div className="d-flex w-100 justify-content-between align-items-center">
                 <div className="list-wrapper">
-                  <Image className="list-img" src={`${ImagePath}/user/1.jpg`} alt="profile" width={55} height={55}/>
+                  <Image className="list-img" src={`${ImagePath}/user/1.jpg`} alt="profile" width={55} height={55} unoptimized/>
                   <div className="list-content">
                     <h6 className='text-light'>{MollyBoake}</h6>
                     <p>MollyBoake@rhyta.com</p>

@@ -32,7 +32,7 @@ const NavBarTask: React.FC<NavClassType> = ({ activeToggle }) => {
                 <div className="email-app-sidebar left-bookmark task-sidebar">
                   <div className="d-flex">
                     <div className="media-size-email">
-                      <Image src={`${ImagePath}/user/user.png`} className="me-3 rounded-circle" alt="" width={52} height={52}/>
+                      <Image src={`${ImagePath}/user/user.png`} className="me-3 rounded-circle" alt="" width={52} height={52} unoptimized/>
                     </div>
                     <div className="flex-grow-1">
                       <h4>MARK JENCO</h4>

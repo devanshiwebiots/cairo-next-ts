@@ -23,7 +23,7 @@ const ImportantTaskList = () => {
                   <CardBody className="designer-card">
                     <div className="d-flex align-items-center gap-2">
                       <div className="flex-shrink-0">
-                        <Image src={`${ImagePath}/dashboard/user/${item.image}`} alt="user" width={40} height={40} />
+                        <Image src={`${ImagePath}/dashboard/user/${item.image}`} alt="user" width={40} height={40} unoptimized/>
                       </div>
                       <div className="flex-grow-1">
                         <Link href={Href}>

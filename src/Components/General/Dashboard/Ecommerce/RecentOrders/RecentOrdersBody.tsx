@@ -18,7 +18,7 @@ const RecentOrdersBody: React.FC<RecentOrdersBodyType> = ({ currentItems }) => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard-2/${data.image}`} alt="dashboard-2" width={38} height={38} />
+                <Image src={`${ImagePath}/dashboard-2/${data.image}`} alt="dashboard-2" width={38} height={38} unoptimized/>
               </div>
               <div className="dashboard-3">
                 <Link href={Href}>{data.order}</Link>
@@ -30,7 +30,7 @@ const RecentOrdersBody: React.FC<RecentOrdersBodyType> = ({ currentItems }) => {
           <td className="customer-img">
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard-2/user/${data.image1}`} alt="dashboard-2" width={40} height={40} />
+                <Image src={`${ImagePath}/dashboard-2/user/${data.image1}`} alt="dashboard-2" width={40} height={40} unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <h6>{data.name}</h6>

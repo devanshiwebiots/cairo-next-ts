@@ -13,12 +13,12 @@ const DisabledLists = () => {
         <CardBody>
           <ListGroup>
             <ListGroupItem tag="a" className="list-group-item-action list-hover-primary active" href={Href}>
-              <Image className="rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="user" width={40} height={40}/>
+              <Image className="rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="user" width={40} height={40} unoptimized/>
               Teresa J. Mosteller
             </ListGroupItem>
             {DisableList.map(({ text, className, src }, index) => (
               <ListGroupItem tag="a" className={`list-group-item-action ${className ? className : ""}`} key={index} href={Href}>
-                <Image className="rounded-circle" src={`${ImagePath}/${src}`} alt="user" width={40} height={40}/>
+                <Image className="rounded-circle" src={`${ImagePath}/${src}`} alt="user" width={40} height={40} unoptimized/>
                 {text}
               </ListGroupItem>
             ))}

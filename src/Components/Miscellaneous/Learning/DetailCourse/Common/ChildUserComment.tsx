@@ -9,7 +9,7 @@ export const ChildUserComment = () => {
       <ul className="ms-5">
         <li>
           <div className="d-flex">
-            <Image className="align-self-center" src={`${ImagePath}/blog/9.jpg`} alt="Generic placeholder image" width={74} height={74} />
+            <Image className="align-self-center" src={`${ImagePath}/blog/9.jpg`} alt="Generic placeholder image" width={74} height={74} unoptimized/>
             <div className="flex-grow-1">
               <Row>
                 <Col xl="12">

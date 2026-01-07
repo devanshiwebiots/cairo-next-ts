@@ -9,12 +9,12 @@ const BottomTabsContent: React.FC<TabContentProp> = ({ basicTab }) => {
     <TabContent activeTab={basicTab}>
       <TabPane tabId={"1"}>
         <div className="common-flex">
-          <Image src={`${ImagePath}/tree/html.png`} alt="" width={20} height={20}/>
+          <Image src={`${ImagePath}/tree/html.png`} alt="" width={20} height={20} unoptimized/>
           <h5>{Css}</h5>
         </div>
         <div className="tab-paragraph">
           <i className="fa fa-arrow-circle-o-right"></i>
-          <p>"One of the three main web technologies is CSS. The terms "cascading" and "style," with cascading indicating how one style can cascade from another, are actually the key to understanding CSS, which stands for Cascading Style Sheets."</p>
+          <p>{`"One of the three main web technologies is CSS. The terms "cascading" and "style," with cascading indicating how one style can cascade from another, are actually the key to understanding CSS, which stands for Cascading Style Sheets."`}</p>
         </div>
         <div className="tab-paragraph">
           <i className="fa fa-arrow-circle-o-right"></i>
@@ -23,7 +23,7 @@ const BottomTabsContent: React.FC<TabContentProp> = ({ basicTab }) => {
       </TabPane>
       <TabPane tabId={"2"}>
         <div className="common-flex">
-          <Image src={`${ImagePath}/tree/vendor.png`} alt="" width={20} height={20}/>
+          <Image src={`${ImagePath}/tree/vendor.png`} alt="" width={20} height={20} unoptimized/>
           <h5>Vendors</h5>
         </div>
         <div className="tab-paragraph">
@@ -36,12 +36,12 @@ const BottomTabsContent: React.FC<TabContentProp> = ({ basicTab }) => {
         </div>
       </TabPane>
       <TabPane tabId={"3"}>
-        <div className="common-flex"><Image src={`${ImagePath}/tree/js.png`} alt="" width={20} height={20}/>
+        <div className="common-flex"><Image src={`${ImagePath}/tree/js.png`} alt="" width={20} height={20} unoptimized/>
           <h5>Javascript</h5>
         </div>
         <div className="tab-paragraph">
           <i className="fa fa-arrow-circle-o-right"></i>
-          <p>Development of interactive and adaptable websites is made possible by JavaScript, the web's dynamic programming language.</p>
+          <p>{`Development of interactive and adaptable websites is made possible by JavaScript, the web's dynamic programming language.`}</p>
         </div>
         <div className="tab-paragraph">
           <i className="fa fa-arrow-circle-o-right"></i>

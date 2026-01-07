@@ -17,7 +17,7 @@ const CheckPayment = () => {
           <Label className="d-block" for="edo-ani2" check>
             <Input className="radio_animated" id="edo-ani2" type="radio" name="rdo-ani" defaultChecked/>
             {Paypal}
-            <Image className="img-paypal" src={`${ImagePath}/checkout/paypal.png`} alt="paypal" width={205} height={71}/>
+            <Image className="img-paypal" src={`${ImagePath}/checkout/paypal.png`} alt="paypal" width={205} height={71} unoptimized/>
           </Label>
         </Col>
       </Row>

@@ -22,7 +22,7 @@ const GridCards = () => {
             <CardBody>
               <div className="d-flex gap-2 align-items-center">
                 <div className="flex-shrink-0">
-                  <Image src={`${ImagePath}/blog/${bodyImg}`} className="img-fluid" alt="" width={40} height={40} />
+                  <Image src={`${ImagePath}/blog/${bodyImg}`} className="img-fluid" alt="" width={40} height={40} unoptimized/>
                 </div>
                 <div className="flex-grow-1">
                   <h6>{name}</h6> <p className="mb-0">{date}</p>

@@ -15,7 +15,7 @@ export const Profile = () => {
   return (
     <li className='profile-nav onhover-dropdown px-0 py-0'>
       <div className='d-flex profile-media align-items-center'>
-        <Image className='img-40' src={session?.user?.image || `${ImagePath}/dashboard/profile.png`} alt='' width={40} height={40} />
+        <Image className='img-40' src={session?.user?.image || `${ImagePath}/dashboard/profile.png`} alt='' width={40} height={40} unoptimized/>
         <div className='flex-grow-1'>
           <span>{session?.user?.email}</span>
           <p className='mb-0 font-outfit'>{session?.user?.name || "Web Designer"}</p>

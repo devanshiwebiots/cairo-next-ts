@@ -22,7 +22,7 @@ const FileConent = () => {
             <FileContentButtonActions />
         </div>
     </CardHeader>
-    {fileList.length ? <FileMainContent fileList={fileList} /> : <Image className="img-fluid mx-auto my-4" src={`${ImagePath}/sad.gif`} alt="image" width={150} height={150}/>}
+    {fileList.length ? <FileMainContent fileList={fileList} /> : <Image className="img-fluid mx-auto my-4" src={`${ImagePath}/sad.gif`} alt="image" width={150} height={150} unoptimized/>}
    </Card>
   )
 }

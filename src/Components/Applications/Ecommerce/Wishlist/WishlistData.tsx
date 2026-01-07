@@ -12,7 +12,7 @@ const WishlistData = () => {
         <Col xl="4" md="6" key={index}>
           <div className="prooduct-details-box">
             <div className="d-flex">
-              <Image className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt="#" width={60} height={60}/>
+              <Image className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt="#" width={60} height={60} unoptimized/>
               <div className="flex-grow-1 ms-3">
                 <div className="product-name">
                   <h6>

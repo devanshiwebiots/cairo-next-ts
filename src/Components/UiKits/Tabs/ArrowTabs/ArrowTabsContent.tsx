@@ -20,13 +20,13 @@ const ArrowTabsContent: React.FC<TabContentProp> = ({ basicTab }) => {
       <TabPane tabId={"2"}>
         <Row className="g-3">
           <Col className="col-4">
-            <Image src={`${ImagePath}/switch/t1.jpg`} className="img-fluid" alt="" width={236} height={245}/>
+            <Image src={`${ImagePath}/switch/t1.jpg`} className="img-fluid" alt="" width={236} height={245} unoptimized/>
           </Col>
           <Col className="col-4">
-            <Image src={`${ImagePath}/switch/t2.jpg`} className="img-fluid" alt="" width={236} height={245}/>
+            <Image src={`${ImagePath}/switch/t2.jpg`} className="img-fluid" alt="" width={236} height={245} unoptimized/>
           </Col>
           <Col className="col-4">
-            <Image src={`${ImagePath}/switch/t3.jpg`} className="img-fluid" alt="" width={236} height={245}/>
+            <Image src={`${ImagePath}/switch/t3.jpg`} className="img-fluid" alt="" width={236} height={245} unoptimized/>
           </Col>
         </Row>
       </TabPane>
@@ -46,11 +46,11 @@ const ArrowTabsContent: React.FC<TabContentProp> = ({ basicTab }) => {
       <TabPane tabId={"4"}>
         <div className="common-box">
           <i className="fa fa-arrow-circle-o-right"></i>
-          <p>We will handle your payment procedure, saving you the trouble of following up with clients after each assignment. We'll try our hardest to make sure you receive your money promptly and equitably.</p>
+          <p>{"We will handle your payment procedure, saving you the trouble of following up with clients after each assignment. We'll try our hardest to make sure you receive your money promptly and equitably."}</p>
         </div>
         <div className="common-box">
           <i className="fa fa-arrow-circle-o-right"></i>
-          <p>Seamless website development requires a foundation that's reliable and efficient. Enter the installment process – the bedrock of building a powerful online presence. Installments in website development refer to the strategic implementation of features, functionalities, and updates in a phased manner, ensuring smooth integration and optimal performance. </p>
+          <p>{"Seamless website development requires a foundation that's reliable and efficient. Enter the installment process – the bedrock of building a powerful online presence. Installments in website development refer to the strategic implementation of features, functionalities, and updates in a phased manner, ensuring smooth integration and optimal performance. "}</p>
         </div>
       </TabPane>
     </TabContent>

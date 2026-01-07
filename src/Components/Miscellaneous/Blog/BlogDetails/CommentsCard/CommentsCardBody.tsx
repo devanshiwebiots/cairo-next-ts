@@ -9,7 +9,7 @@ const CommentsCardBody = () => {
       {CommentsCardList.map(({ src, time, description, name, className }, index) => (
         <li className={`${className ? className : ""}`} key={index}>
           <div className="d-flex">
-            <Image src={`${ImagePath}/avtar/${src}`} alt="" width={50} height={50}/>
+            <Image src={`${ImagePath}/avtar/${src}`} alt="" width={50} height={50} unoptimized/>
             <div className="flex-grow-1">
               <h6>{name}</h6>
               <span>

@@ -12,7 +12,7 @@ const FollowrsCollspan: React.FC<MyProfileClassCollapseProp> = ({isFilter}) => {
         <CardBody className='social-list filter-cards-view"'>
         {FollowerData.map((data, i) => (
             <div key={i} className='d-flex'>
-                <Image src={`${ImagePath}/user/${data.imageName}`}  className='img-50 img-fluid m-r-20 rounded-circle' alt='' width={50} height={50}/>
+                <Image src={`${ImagePath}/user/${data.imageName}`}  className='img-50 img-fluid m-r-20 rounded-circle' alt='' width={50} height={50} unoptimized/>
                 <div className='flex-grow-1'><span className='d-block'>{data.name}</span>
                 <Link href={Href}>{AddFriend}</Link>
                 </div>

@@ -14,8 +14,8 @@ const UnlockUserContainer = () => {
           <div className="login-card login-dark">
             <div>
               <div><Link className="logo" href={`/dashboard/default_dashboard`}>
-                <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" width={114} height={38} priority/>
-                <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" width={114} height={38}/></Link></div>
+                <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" width={114} height={38} priority unoptimized/>
+                <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" width={114} height={38} unoptimized/></Link></div>
               <div className="login-main">
                 <Form className="theme-form" onSubmit={(e)=>e.preventDefault()}>
                   <h4>{Unlock}</h4>

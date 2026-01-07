@@ -17,7 +17,7 @@ const Administrator = () => {
               <div className="administrator-admin">
                 <div className="d-flex align-items-center gap-3">
                   <div className="position-relative">
-                    <Image className="rounded-circle" src={Profile.src} alt="" width={45} height={45} />
+                    <Image className="rounded-circle" src={Profile.src} alt="" width={45} height={45} unoptimized/>
                     <div className="status-circle bg-primary"></div>
                   </div>
                   <div>

@@ -12,7 +12,7 @@ const UserProfileFirstStyle = () => {
         <div className="cardheader"></div>
         <div className="user-image">
           <div className="avatar">
-            <Image alt="" src={`${ImagePath}/user/7.jpg`} className="step1" width={100} height={100} />
+            <Image alt="" src={`${ImagePath}/user/7.jpg`} className="step1" width={100} height={100} unoptimized/>
           </div>
           <div className="icon-wrapper">
             <i className="icofont icofont-pencil-alt-5 step2"></i>

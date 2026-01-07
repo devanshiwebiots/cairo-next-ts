@@ -14,7 +14,7 @@ const BorderPrimaryState = () => {
                 <ListGroup>
                     {BorderPrimaryStateList.map(({src, active, name}, index) => (
                         <ListGroupItem key={index} className={`list-group-item-action ${active ? 'active' : ''}`}>
-                            <Image src={`${ImagePath}/${src}`} className='rounded-circle' alt='' width={40} height={40}/>{name}
+                            <Image src={`${ImagePath}/${src}`} className='rounded-circle' alt='' width={40} height={40} unoptimized/>{name}
                         </ListGroupItem>
                     ))}
                 </ListGroup>

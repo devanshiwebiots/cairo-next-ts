@@ -26,9 +26,9 @@ const EmiForm = () => {
               <FormGroup>
                 <Col xs="12">
                   <ul className="payment-opt">
-                    <li><Image src={`${ImagePath}/ecommerce/mastercard.png`} alt="" width={34} height={20}/></li>
-                    <li><Image src={`${ImagePath}/ecommerce/visa.png`} alt="" width={64} height={20}/></li>
-                    <li><Image src={`${ImagePath}/ecommerce/paypal.png`} alt="" width={78} height={20}/></li>
+                    <li><Image src={`${ImagePath}/ecommerce/mastercard.png`} alt="" width={34} height={20} unoptimized/></li>
+                    <li><Image src={`${ImagePath}/ecommerce/visa.png`} alt="" width={64} height={20} unoptimized/></li>
+                    <li><Image src={`${ImagePath}/ecommerce/paypal.png`} alt="" width={78} height={20} unoptimized/></li>
                   </ul>
                 </Col>
               </FormGroup>

@@ -8,7 +8,7 @@ const InvoiceThirdHead = () => {
       <tbody>
         <tr>
           <td style={{ padding: "30px 0 30px 30px" }}>
-            <Image src={`${ImagePath}/logo/logo-1.png`} alt="logo" width={114} height={38}/>
+            <Image src={`${ImagePath}/logo/logo-1.png`} alt="logo" width={114} height={38} unoptimized/>
             <address style={{ opacity: "0.8", width: "36%", marginTop: 10, fontStyle: "normal" }}>
               <span style={{ fontSize: 18, lineHeight: "1.5", fontWeight: 500, color:'#52526C', opacity:'0.8'}} >1982 Harvest Lane New York, NY12210 United State</span>
             </address>

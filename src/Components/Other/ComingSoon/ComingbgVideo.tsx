@@ -13,7 +13,7 @@ const ComingbgVideoContainer = () => {
                 <source src={`/assets/video/auth-bg.mp4`} type='video/mp4'/>
             </video>
             <div className='comingsoon-inner text-center'>
-                <Image src={`${ImagePath}/logo/logo-1.png`} alt='' width={114} height={38}/>
+                <Image src={`${ImagePath}/logo/logo-1.png`} alt='' width={114} height={38} unoptimized/>
                 <h5>{WeAreComingSoon}</h5>
                 <div className="countdown">
                   <CountdownData />

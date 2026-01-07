@@ -7,14 +7,14 @@ export const BorderTabContent:React.FC<TabContentProp> = ({basicTab}) => {
   return (
     <TabContent activeTab={basicTab}>
       <TabPane tabId="1">
-        <p className="pt-3">This is some placeholder content the <b>Home tab's</b> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <b>.nav</b>-powered navigation.To convey the active state to assistive technologies, use the <b>aria-current</b> attribute — using the page value for current page, or true for the current item in a set. The base <b>nav</b> component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+        <p className="pt-3">This is some placeholder content the <b>{"Home tab's"}</b> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <b>.nav</b>-powered navigation.To convey the active state to assistive technologies, use the <b>aria-current</b> attribute — using the page value for current page, or true for the current item in a set. The base <b>nav</b> component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
       </TabPane>
       <TabPane tabId="2">
          <CardBody className="pb-0">
           <div className="main-inbox"> 
             <div className="header-inbox"> 
               <div className="header-left-inbox">
-                <div className="inbox-img"><Image src={`${ImagePath}/ecommerce/06.jpg`} alt="profile" width={50} height={50}/></div>
+                <div className="inbox-img"><Image src={`${ImagePath}/ecommerce/06.jpg`} alt="profile" width={50} height={50} unoptimized/></div>
                 <div className="inbox-content"> 
                   <h6>{DalbultCaslin}</h6>
                   <p className="text-muted">stroman.rogers@gmail.com</p>

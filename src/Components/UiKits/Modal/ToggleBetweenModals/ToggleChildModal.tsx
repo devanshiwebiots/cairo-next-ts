@@ -10,7 +10,7 @@ const ToggleChildModal: React.FC<ToggleModalType> = ({toggleAll}) => {
     <div className='modal-toggle-wrapper'>
       <ul className='modal-img'>
         <li className='text-center'>
-            <Image src={`${ImagePath}/gif/logout.gif`} alt="logout" width={100} height={100}/>
+            <Image src={`${ImagePath}/gif/logout.gif`} alt="logout" width={100} height={100} unoptimized/>
         </li>
       </ul>
       <h4 className='pt-3 text-center'>{AlreadyLeaving}</h4>

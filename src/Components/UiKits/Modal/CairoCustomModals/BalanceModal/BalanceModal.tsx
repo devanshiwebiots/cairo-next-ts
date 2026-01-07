@@ -16,7 +16,7 @@ const BalanceModal: React.FC<BalanceModalType> = ({modalThird,modalThirdToggle: 
           <CardBody>
             <div className="balance-profile">
               <div className="balance-img">
-                <Image className="image-fluid" src={`${ImagePath}/product-lists/user.png`} alt="user vector" width={68} height={68}/>
+                <Image className="image-fluid" src={`${ImagePath}/product-lists/user.png`} alt="user vector" width={68} height={68} unoptimized/>
                 <Link className="edit-icon" href={`/users/user_profile`}><SVG iconId="pencil" /></Link>
               </div>
               <span className="f-light d-block">Your Balance</span>

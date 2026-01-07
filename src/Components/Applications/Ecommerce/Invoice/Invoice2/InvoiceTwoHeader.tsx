@@ -9,7 +9,7 @@ const InvoiceTwoHeader = () => {
         <tbody>
           <tr>
            <td>
-           <Image src={`${ImagePath}/logo/logo-1.png`} alt="logo" width={114} height={38}/>
+           <Image src={`${ImagePath}/logo/logo-1.png`} alt="logo" width={114} height={38} unoptimized/>
             <address style={{ color: "#52526C", opacity: "0.8", width: "40%", marginTop: "10px", fontStyle: "normal" }}>
               <span style={{ fontSize: "18px", lineHeight: "1.5", fontWeight: "500" }}>1982 Harvest Lane New York, NY12210 United State</span>
             </address>

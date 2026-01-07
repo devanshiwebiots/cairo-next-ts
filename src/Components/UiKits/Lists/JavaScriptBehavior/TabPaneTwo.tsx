@@ -5,7 +5,7 @@ import React from "react";
 const TabPaneTwo = () => {
   return (
     <div className="flex-space align-items-center list-light-dark contact-profile">
-      <Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" width={100} height={100}/>
+      <Image className="tab-img" src={`${ImagePath}/avtar/3.jpg`} alt="profile" width={100} height={100} unoptimized/>
       <ul className="d-flex flex-column gap-2">
         <li>
           <strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States- 33020

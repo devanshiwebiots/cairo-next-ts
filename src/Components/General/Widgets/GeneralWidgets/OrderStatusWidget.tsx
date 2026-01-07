@@ -15,7 +15,7 @@ const OrderStatusWidget = () => {
           <div className="order-place">
             <div className="d-flex">
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard-2/product/headphone.png`} alt="" width={25} height={35} />
+                <Image src={`${ImagePath}/dashboard-2/product/headphone.png`} alt="" width={25} height={35} unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>
@@ -30,7 +30,7 @@ const OrderStatusWidget = () => {
               <li key={index}>
                 <div className="d-flex">
                   <div className={`flex-shrink-0 bg-${item.color}`}>
-                    <Image src={`${ImagePath}/dashboard-2/product/${item.image}`} alt="" width={23} height={23}/>
+                    <Image src={`${ImagePath}/dashboard-2/product/${item.image}`} alt="" width={23} height={23} unoptimized/>
                   </div>
                   <div className="flex-grow-1">
                     <div className="d-flex justify-content-between">

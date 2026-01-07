@@ -15,7 +15,7 @@ const ScrollableLists = () => {
           <ListGroup className="main-lists-content custom-scrollbar scrollbar-wrapper theme-scrollbar">
             <ListGroupItem tag={"a"} className="list-group-item-action active list-hover-primary" href={Href}>
               <div className="list-wrapper gap-0">
-                <Image className="list-img" src={`${ImagePath}/user/9.jpg`} alt="profile" width={55} height={55}/>
+                <Image className="list-img" src={`${ImagePath}/user/9.jpg`} alt="profile" width={55} height={55} unoptimized/>
                 <div className="list-content">
                   <h6>{MollyBoake}</h6>
                   <p>MollyBoake@rhyta.com</p> 

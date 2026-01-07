@@ -18,13 +18,13 @@ const BottomTabs = () => {
                     
                     <Nav pills color='primary'id="pills-bg-tab3" >
                         <NavItem>
-                            <NavLink href={Href} className={`${basicTab === '1' ? 'active' :''}`} onClick={() => setBasicTab('1')}><Image src={`${ImagePath}/tree/html.png`} alt="" width={20} height={20}/>{Css}</NavLink>
+                            <NavLink href={Href} className={`${basicTab === '1' ? 'active' :''}`} onClick={() => setBasicTab('1')}><Image src={`${ImagePath}/tree/html.png`} alt="" width={20} height={20} unoptimized/>{Css}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href={Href} className={`${basicTab === '2' ? 'active' :''}`} onClick={() => setBasicTab('2')}><Image src={`${ImagePath}/tree/vendor.png`} alt="" width={20} height={20}/>{Vendor}</NavLink>
+                            <NavLink href={Href} className={`${basicTab === '2' ? 'active' :''}`} onClick={() => setBasicTab('2')}><Image src={`${ImagePath}/tree/vendor.png`} alt="" width={20} height={20} unoptimized/>{Vendor}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href={Href} className={`${basicTab === '3' ? 'active' :''}`} onClick={() => setBasicTab('3')}><Image src={`${ImagePath}/tree/js.png`} alt="" width={20} height={20}/>{JavaScripts}</NavLink>
+                            <NavLink href={Href} className={`${basicTab === '3' ? 'active' :''}`} onClick={() => setBasicTab('3')}><Image src={`${ImagePath}/tree/js.png`} alt="" width={20} height={20} unoptimized/>{JavaScripts}</NavLink>
                         </NavItem>
                     </Nav>
                 </div>

@@ -11,7 +11,7 @@ const InvoiceFiveHeader = () => {
       <table className="w-100 mt-3">
         <tbody>
           <tr style={{ padding: "28px 0 22px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <td> <Image src={`${ImagePath}/logo/logo-1.png`} alt="" width={114} height={38}/></td>
+            <td> <Image src={`${ImagePath}/logo/logo-1.png`} alt="" width={114} height={38} unoptimized/></td>
             <InvoiceFiveRightHeader />
           </tr>
           <tr style={{display:'flex', justifyContent:'space-between'}}>

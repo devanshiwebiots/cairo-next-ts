@@ -10,8 +10,8 @@ export const RegisterWizadList: React.FC<RegisterWizadListProp> = ({ level }) =>
     <ul className="theme-scrollbar anchor">
       <li>
         <Link className="logo text-start ps-0" href={`/dashboard/default_dashboard`}>
-          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" width={114} height={38}/>
-          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" width={114} height={38}/>
+          <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="looginpage" width={114} height={38} unoptimized/>
+          <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="looginpage" width={114} height={38} unoptimized/>
         </Link>
       </li>
       {RegisterStepData.map((data, index) => (

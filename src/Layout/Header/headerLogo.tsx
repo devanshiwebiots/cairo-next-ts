@@ -13,8 +13,8 @@ export const HeaderLogo = () => {
   return (
     <div className="header-logo-wrapper col-auto p-0">
       <div className="logo-wrapper">
-        <Image src={img1.src} className="img-fluid for-light" width={100} height={34} alt="image"/>
-        <Image src={img2.src} className="img-fluid for-dark" width={100} height={34} alt="image"/>
+        <Image src={img1.src} className="img-fluid for-light" width={100} height={34} alt="image" unoptimized/>
+        <Image src={img2.src} className="img-fluid for-dark" width={100} height={34} alt="image" unoptimized/>
       </div>
       <div className="toggle-sidebar" onClick={() => dispatch(setToggleSidebar(!toggleSidebar))} defaultChecked>
         <SVG className={`${sidebarIconType}-icon sidebar-toggle status_toggle middle`} iconId={`${sidebarIconType === "fill" ? "fill-" : ""}stroke-animation`} />

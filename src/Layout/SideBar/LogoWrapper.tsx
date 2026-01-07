@@ -14,7 +14,7 @@ export const LogoWrapper = () => {
     <Fragment>
       <div className="logo-wrapper">
         <Link href={`/dashboard/default_dashboard`}>
-          <Image className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" width={114} height={38} priority/>
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo.png`} alt="" width={114} height={38} priority unoptimized/>
         </Link>
         <div className="back-btn" onClick={() => dispatch(handleResponsiveToggle())}>
           <i className="fa fa-angle-left"></i>
@@ -25,7 +25,7 @@ export const LogoWrapper = () => {
       </div>
       <div className="logo-icon-wrapper">
         <Link href={`/dashboard/default_dashboard`}>
-          <Image className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" width={32} height={32} />
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} alt="" width={32} height={32} unoptimized/>
         </Link>
       </div>
     </Fragment>

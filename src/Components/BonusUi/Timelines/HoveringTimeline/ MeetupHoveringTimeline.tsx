@@ -15,7 +15,7 @@ export const MeetupHoveringTimeline = () => {
             {MeetupHoveringList.map(({ image, name, number }, index) => (
               <div className="designer-profile" key={index}>
                 <div className="designer-wrap">
-                  <Image className="designer-img" src={`${ImagePath}/${image}`} alt="profile" width={50} height={50}/>
+                  <Image className="designer-img" src={`${ImagePath}/${image}`} alt="profile" width={50} height={50} unoptimized/>
                   <div className="designer-content">
                     <h6>{name}</h6>
                     <p>{number}</p>

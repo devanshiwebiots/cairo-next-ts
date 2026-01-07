@@ -10,7 +10,7 @@ export const CommonProjectListCard :React.FC<CommonProjectInterFace> = ({ item }
         <Badge color="" className={`badge-${item.badge === 'Done' ? 'success' : 'primary'}`}>{item.badge}</Badge>
         <h5 className="f-w-500">{item.title}</h5>
         <div className="d-flex">
-          <Image className="img-20 me-2 rounded-circle" src={`${ImagePath}/user/${item.image}`} alt="" width={20} height={20}/>
+          <Image className="img-20 me-2 rounded-circle" src={`${ImagePath}/user/${item.image}`} alt="" width={20} height={20} unoptimized/>
           <div className="flex-grow-1"><p>{item.sites}</p></div>
         </div>
         <p>{item.description}</p>
@@ -24,9 +24,9 @@ export const CommonProjectListCard :React.FC<CommonProjectInterFace> = ({ item }
         </Row>
         <div className="customers">
           <ul>
-            <li className="d-inline-block"><Image className="img-30 rounded-circle" src={`${ImagePath}/user/${item.customers_img1}`} alt="" data-original-title="" width={30} height={30}/></li>
-            <li className="d-inline-block"><Image className="img-30 rounded-circle" src={`${ImagePath}/user/${item.customers_img2}`} alt="" data-original-title="" width={30} height={30}/></li>
-            <li className="d-inline-block"><Image className="img-30 rounded-circle" src={`${ImagePath}/user/${item.customers_img3}`} alt="" data-original-title="" width={30} height={30}/></li>
+            <li className="d-inline-block"><Image className="img-30 rounded-circle" src={`${ImagePath}/user/${item.customers_img1}`} alt="" data-original-title="" width={30} height={30} unoptimized/></li>
+            <li className="d-inline-block"><Image className="img-30 rounded-circle" src={`${ImagePath}/user/${item.customers_img2}`} alt="" data-original-title="" width={30} height={30} unoptimized/></li>
+            <li className="d-inline-block"><Image className="img-30 rounded-circle" src={`${ImagePath}/user/${item.customers_img3}`} alt="" data-original-title="" width={30} height={30} unoptimized/></li>
             <li className="d-inline-block ms-2"><p className="f-12">{`+${item.like} More`}</p></li>
           </ul>
         </div>

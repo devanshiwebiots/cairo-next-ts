@@ -14,7 +14,7 @@ const DefaultToast = () => {
       <CardBody className="toast-rtl">
         <Toast className="default-show-toast" isOpen={open}>
           <div className="toast-header toast-img">
-            <Image className="rounded me-2" src={`${ImagePath}/product-lists/profile.png`} alt="profile" width={30} height={30}/>
+            <Image className="rounded me-2" src={`${ImagePath}/product-lists/profile.png`} alt="profile" width={30} height={30} unoptimized/>
             <strong className="me-auto">Cairo theme</strong>
             <small className="d-sm-block d-none">10 min ago</small>
             <Button close className="p-0" onClick={() => setOpen(false)}></Button>

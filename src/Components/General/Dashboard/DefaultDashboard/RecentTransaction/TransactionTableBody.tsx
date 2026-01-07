@@ -19,7 +19,7 @@ export const TransactionTableBody: React.FC<{ currentItems: typeof ReactTranscti
           <td>
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                <Image src={`${ImagePath}/dashboard/user/${item.image}`} alt="User" width={42} height={42} />
+                <Image src={`${ImagePath}/dashboard/user/${item.image}`} alt="User" width={42} height={42} unoptimized/>
               </div>
               <div className="flex-grow-1 ms-2">
                 <Link href={Href}><h6>{item.name}</h6></Link>

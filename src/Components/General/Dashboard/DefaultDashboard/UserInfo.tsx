@@ -42,7 +42,7 @@ const UserInfo = () => {
           </div>
           <div className="card-body">
             <h1 className="m-0">
-              {Welcome} <Image src={hand.src} alt="" width={30} height={30} />
+              {Welcome} <Image src={hand.src} alt="" width={30} height={30} unoptimized/>
             </h1>
             <p>{happeningStore}</p>
             <div className="d-flex align-items-end justify-content-between">
